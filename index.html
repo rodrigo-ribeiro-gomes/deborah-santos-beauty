@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Produtos</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__content">
+      <div class="topbar__brand">
+        <img class="topbar__logo" src="images/logo-deborah-santos.png" alt="Logo Deborah Santos" />
+        <div>
+          <p class="badge">Loja online</p>
+          <h1>Catálogo de Presentes</h1>
+          <p class="subtitle">Escolha seu kit e fale conosco pelo WhatsApp para pedir informações e reservar.</p>
+          <div class="topbar__tags" aria-label="Categorias da loja">
+            <span class="topbar__tag">Produtos de beleza</span>
+            <span class="topbar__tag">Perfumes</span>
+            <span class="topbar__tag">Kits para presentes</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="whatsapp-btn" id="whatsappTop" href="#" target="_blank" rel="noopener">
+        Falar no WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <div>
+          <h2>Produtos selecionados da loja</h2>
+          <p>
+            Navegue pelo catálogo e clique em <strong>Comprar</strong> para iniciar a conversa no WhatsApp com o produto já selecionado.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section">
+      <div class="section__header">
+        <h3>Produtos</h3>
+        <p>Os itens abaixo foram montados a partir das imagens enviadas.</p>
+      </div>
+
+      <div class="product-carousel" aria-label="Carrossel de produtos">
+        <button class="product-carousel__nav product-carousel__nav--prev" id="productPrev" type="button" aria-label="Produto anterior">
+          ‹
+        </button>
+
+        <div class="product-carousel__viewport">
+          <div id="productTrack" class="product-carousel__track"></div>
+        </div>
+
+        <button class="product-carousel__nav product-carousel__nav--next" id="productNext" type="button" aria-label="Próximo produto">
+          ›
+        </button>
+      </div>
+    </section>
+
+    <section class="container section contact">
+      <div>
+        <h3>Contato rápido</h3>
+        <p>Se tiver dúvidas, chame no WhatsApp e envie o nome do kit desejado.</p>
+      </div>
+      <a class="whatsapp-btn whatsapp-btn--large" id="whatsappBottom" href="#" target="_blank" rel="noopener">
+        Conversar no WhatsApp
+      </a>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" type="button" aria-label="Fechar imagem">×</button>
+    <img class="lightbox__image" id="lightboxImage" alt="" />
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Catálogo de produtos • feito para vendas com contato direto</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
