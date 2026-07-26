@@ -99,6 +99,19 @@
     </div>
   </footer>
 
+  <button class="music-toggle" id="musicToggle" type="button" aria-pressed="false">
+    ♫ Ativar música
+  </button>
+  <div class="music-player" aria-hidden="true">
+    <iframe
+      id="musicFrame"
+      title="Música do catálogo"
+      allow="autoplay; encrypted-media; picture-in-picture"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </div>
+
   <script src="js/script.js"></script>
 </body>
 </html>

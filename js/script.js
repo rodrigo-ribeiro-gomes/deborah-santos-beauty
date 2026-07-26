@@ -76,6 +76,7 @@ function getProductCategory(product) {
 
 const whatsappLinks = document.querySelectorAll("#whatsappTop, #whatsappBottom");
 const categoryFilters = document.querySelectorAll(".category-filter");
+const MUSIC_VIDEO_ID = "xpvaUvp77hs";
 let catalogProducts = [];
 let activeCategory = "Todos";
 
@@ -101,6 +102,43 @@ function buildWhatsAppUrl(productName = "") {
 function setWhatsappLinks() {
   whatsappLinks.forEach((link) => {
     link.href = buildWhatsAppUrl();
+  });
+}
+
+function setupMusicPlayer() {
+  const musicToggle = document.getElementById("musicToggle");
+  const musicFrame = document.getElementById("musicFrame");
+
+  if (!musicToggle || !musicFrame) {
+    return;
+  }
+
+  let isPlaying = false;
+  const embedUrl = `https://www.youtube.com/embed/${MUSIC_VIDEO_ID}?autoplay=1&loop=1&playlist=${MUSIC_VIDEO_ID}&playsinline=1&rel=0&enablejsapi=1`;
+
+  musicToggle.addEventListener("click", () => {
+    isPlaying = !isPlaying;
+
+    if (isPlaying) {
+      musicFrame.src = embedUrl;
+      window.setTimeout(() => {
+        if (isPlaying && musicFrame.contentWindow) {
+          musicFrame.contentWindow.postMessage(JSON.stringify({
+            event: "command",
+            func: "playVideo",
+            args: []
+          }), "https://www.youtube.com");
+        }
+      }, 1000);
+      musicToggle.textContent = "♫ Pausar música";
+      musicToggle.classList.add("is-playing");
+    } else {
+      musicFrame.src = "";
+      musicToggle.textContent = "♫ Ativar música";
+      musicToggle.classList.remove("is-playing");
+    }
+
+    musicToggle.setAttribute("aria-pressed", String(isPlaying));
   });
 }
 
@@ -245,6 +283,7 @@ async function loadProducts() {
 }
 
 setWhatsappLinks();
+setupMusicPlayer();
 setupCategoryFilters();
 loadProducts();
 setupProductCarousel();
