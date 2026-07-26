@@ -14,7 +14,7 @@
   { "id": 13, "nome": "Kit Beleza Hidratada", "preco": "Consulte no WhatsApp", "descricao": "Produtos para hidratação e cuidado corporal.", "imagem": "images/kit-beleza-hidratacao.jpeg" },
   { "id": 14, "nome": "Kit Tecnologia que Cuida", "preco": "Consulte no WhatsApp", "descricao": "Acessórios tecnológicos para autocuidado.", "imagem": "images/kit-tecnologia-cuidados.jpeg" },
   { "id": 15, "nome": "Kit Acessórios com Estilo", "preco": "Consulte no WhatsApp", "descricao": "Acessórios para complementar o visual.", "imagem": "images/kit-acessorios-estilo.jpeg" },
-  { "id": 16, "nome": "Kit Perfume Para o Seu Dia", "preco": "Consulte no WhatsApp", "descricao": "Perfume e cuidados para a rotina.", "imagem": "images/kit-perfume-dia-a-dia.jpeg" },
+  { "id": 16, "nome": "Kit Carteiras Para o Seu Dia", "preco": "Consulte no WhatsApp", "descricao": "Perfume e cuidados para a rotina.", "imagem": "images/kit-perfume-dia-a-dia.jpeg" },
   { "id": 17, "nome": "Kit Perfume Feminino", "preco": "Consulte no WhatsApp", "descricao": "Fragrância feminina para presentear.", "imagem": "images/kit-perfume-feminino.jpeg" },
   { "id": 18, "nome": "Kit Pele Oleosa", "preco": "Consulte no WhatsApp", "descricao": "Cuidados faciais para pele oleosa.", "imagem": "images/kit-pele-oleosa.jpeg" },
   { "id": 19, "nome": "Kit Pele Limpa", "preco": "Consulte no WhatsApp", "descricao": "Rotina de limpeza e cuidado facial.", "imagem": "images/kit-pele-limpa.jpeg" },
@@ -38,5 +38,6 @@
   { "id": 37, "nome": "Kit Bem-Estar", "preco": "Consulte no WhatsApp", "descricao": "Produtos para relaxamento e bem-estar.", "imagem": "images/kit-bem-estar.jpeg" },
   { "id": 38, "nome": "Kit Cuidado Corporal", "preco": "Consulte no WhatsApp", "descricao": "Kit de cuidados corporais e hidratação.", "imagem": "images/kit-cuidado-corporal.jpeg" },
   { "id": 39, "nome": "Kit Cherry", "preco": "Consulte no WhatsApp", "descricao": "Kit corporal com fragrância marcante e adocicada.", "imagem": "images/kit-cherry.jpeg" },
-  { "id": 40, "nome": "Kit Presente Linda Garota", "preco": "Consulte no WhatsApp", "descricao": "Kit presente com perfume, body splash e bolsa, disponível em diversas fragrâncias.", "imagem": "images/kit-presente-linda-garota.png" }
+  { "id": 40, "nome": "Kit Presente Linda Garota", "preco": "Consulte no WhatsApp", "descricao": "Kit presente com perfume, body splash e bolsa, disponível em diversas fragrâncias.", "imagem": "images/kit-presente-linda-garota.png" },
+  { "id": 41, "nome": "Kit Perfumes Linda Garota", "preco": "Consulte no WhatsApp", "descricao": "Kit presente com perfume, body splash e bolsa, disponível em diversas fragrâncias.", "imagem": "images/kit-presente-linda-garota.png" }
 ]

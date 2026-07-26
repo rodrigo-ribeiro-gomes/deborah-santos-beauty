@@ -59,7 +59,25 @@ const fallbackProducts = [
   }
 ];
 
+const categoryGroups = {
+  "Produtos de beleza": new Set([12, 13, 18, 19, 23, 27, 31, 34, 36, 38]),
+  "Kits para presentes": new Set([1, 2, 4, 8, 9, 11, 25, 28, 29, 33, 37, 40]),
+  "Perfumes": new Set([5, 17, 20, 21, 24, 39, 41]),
+  "Acessórios": new Set([3, 6, 7, 10, 14, 15, 16, 22, 26, 30, 32, 35])
+};
+
+function getProductCategory(product) {
+  if (product.categoria) {
+    return product.categoria;
+  }
+
+  return Object.entries(categoryGroups).find(([, ids]) => ids.has(product.id))?.[0] || "Kits para presentes";
+}
+
 const whatsappLinks = document.querySelectorAll("#whatsappTop, #whatsappBottom");
+const categoryFilters = document.querySelectorAll(".category-filter");
+let catalogProducts = [];
+let activeCategory = "Todos";
 
 function formatPrice(value) {
   if (typeof value === "string") {
@@ -95,6 +113,7 @@ function renderProducts(products) {
         <img src="${product.imagem}" alt="${product.nome}" onerror="this.style.display='none'" />
       </div>
       <div class="card__body">
+        <span class="card__category">${getProductCategory(product)}</span>
         <div class="card__title">${product.nome}</div>
         <div class="price">${formatPrice(product.preco)}</div>
         <p class="description">${product.descricao}</p>
@@ -106,6 +125,33 @@ function renderProducts(products) {
       </div>
     </article>
   `).join("");
+}
+
+function renderActiveCategory() {
+  const visibleProducts = activeCategory === "Todos"
+    ? catalogProducts
+    : catalogProducts.filter((product) => getProductCategory(product) === activeCategory);
+
+  renderProducts(visibleProducts);
+
+  const track = document.getElementById("productTrack");
+  if (track) {
+    track.scrollTo({ left: 0, behavior: "auto" });
+  }
+}
+
+function setupCategoryFilters() {
+  categoryFilters.forEach((filter) => {
+    filter.addEventListener("click", () => {
+      activeCategory = filter.dataset.category || "Todos";
+      categoryFilters.forEach((item) => {
+        const isActive = item === filter;
+        item.classList.toggle("is-active", isActive);
+        item.setAttribute("aria-pressed", String(isActive));
+      });
+      renderActiveCategory();
+    });
+  });
 }
 
 function setupProductCarousel() {
@@ -190,14 +236,16 @@ async function loadProducts() {
       throw new Error("Falha ao carregar o JSON");
     }
 
-    const products = await response.json();
-    renderProducts(products);
+    catalogProducts = await response.json();
+    renderActiveCategory();
   } catch (error) {
-    renderProducts(fallbackProducts);
+    catalogProducts = fallbackProducts;
+    renderActiveCategory();
   }
 }
 
 setWhatsappLinks();
+setupCategoryFilters();
 loadProducts();
 setupProductCarousel();
 setupLightbox();
