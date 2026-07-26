@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "5511924953207"; // Troque pelo número real com DDI + DDD + número
+const WHATSAPP_NUMBER = "5511910493041"; // Troque pelo número real com DDI + DDD + número
 
 const fallbackProducts = [
   {
@@ -6,49 +6,56 @@ const fallbackProducts = [
     nome: "Kit Skincare Tiara Nuvem",
     preco: "Consulte no WhatsApp",
     descricao: "Kit com 6 peças para rotina de beleza, conforto e autocuidado.",
-    imagem: "images/kit-skincare-tiara-nuvem.png"
+    imagem: "images/kit-skincare-tiara-nuvem.jpeg"
   },
   {
     id: 2,
     nome: "Kit Presente Giovanna Baby",
     preco: "Consulte no WhatsApp",
     descricao: "Kit de presente com produtos delicados para cuidados diários.",
-    imagem: "images/kit-presente-giovanna-baby.png"
+    imagem: "images/kit-giovanna-baby.jpeg"
   },
   {
     id: 3,
     nome: "Kit Presente Spa Mini",
     preco: "Consulte no WhatsApp",
     descricao: "Kit com itens de bem-estar, relaxamento e cuidado pessoal.",
-    imagem: "images/kit-presente-spa-mini.png"
+    imagem: "images/kit-presente-spa-mini.jpeg"
   },
   {
     id: 4,
     nome: "Linha Nelô Doce de Leite",
     preco: "Consulte no WhatsApp",
     descricao: "Linha corporal com hidratação, esfoliante e sabonete.",
-    imagem: "images/linha-doce-de-leite.png"
+    imagem: "images/kit-doce-de-leite.jpeg"
   },
   {
     id: 5,
     nome: "Kit Rosa Mosqueta",
     preco: "Consulte no WhatsApp",
     descricao: "Kit de cuidados com foco em hidratação, luminosidade e maciez.",
-    imagem: "images/kit-rosa-mosqueta.png"
+    imagem: "images/kit-rosa-mosqueta.jpeg"
   },
   {
     id: 6,
     nome: "Kit Feminino Luxo",
     preco: "Consulte no WhatsApp",
     descricao: "Kit sofisticado com acessórios para presentear com elegância.",
-    imagem: "images/kit-feminino-luxo.png"
+    imagem: "images/kit-elegancia.jpeg"
   },
   {
     id: 7,
     nome: "Kit Puro Leite",
     preco: "Consulte no WhatsApp",
     descricao: "Kit completo para cuidados diários com toque suave e hidratante.",
-    imagem: "images/kit-puro-leite.png"
+    imagem: "images/kit-puro-leite.jpeg"
+  },
+  {
+    id: 40,
+    nome: "Kit Presente Linda Garota",
+    preco: "Consulte no WhatsApp",
+    descricao: "Kit presente com perfume, body splash e bolsa.",
+    imagem: "images/kit-presente-linda-garota.png"
   }
 ];
 

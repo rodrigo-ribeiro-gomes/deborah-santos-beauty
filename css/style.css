@@ -240,7 +240,8 @@ h1 {
 }
 
 .card__image {
-  aspect-ratio: 4 / 3;
+  /* As artes do catálogo são predominantemente verticais. */
+  aspect-ratio: 2 / 3;
   background: linear-gradient(180deg, rgba(255, 79, 160, 0.15), rgba(82, 168, 255, 0.08));
   display: grid;
   place-items: center;
@@ -253,6 +254,7 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  display: block;
 }
 
 .card__body {
@@ -298,6 +300,52 @@ h1 {
   border-radius: 20px;
   padding: 22px;
   box-shadow: 0 0 0 1px var(--border-soft), var(--shadow);
+}
+
+.payment-section {
+  background:
+    radial-gradient(circle at 85% 20%, rgba(242, 193, 123, 0.16), transparent 30%),
+    linear-gradient(135deg, rgba(255, 79, 160, 0.12), transparent 45%),
+    var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 0 0 1px var(--border-soft), var(--shadow);
+  overflow: hidden;
+}
+
+.payment-section__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 360px);
+  align-items: center;
+  gap: 28px;
+  padding: 26px;
+}
+
+.payment-section h3 {
+  margin: 10px 0;
+  font-size: clamp(1.35rem, 2vw, 1.8rem);
+}
+
+.payment-section__content > div:first-child > p:last-child {
+  max-width: 38ch;
+  color: var(--muted);
+}
+
+.payment-section__art {
+  justify-self: end;
+  width: min(100%, 320px);
+  padding: 8px;
+  border: 1px solid rgba(242, 193, 123, 0.42);
+  border-radius: 18px;
+  background: #080808;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.32);
+}
+
+.payment-section__art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
 }
 
 .footer {
@@ -373,5 +421,15 @@ h1 {
 
   .product-carousel__nav {
     display: none;
+  }
+
+  .payment-section__content {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .payment-section__art {
+    justify-self: center;
+    width: min(100%, 300px);
   }
 }

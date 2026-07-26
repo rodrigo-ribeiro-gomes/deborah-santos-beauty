@@ -1,51 +1,42 @@
 [
-  {
-    "id": 1,
-    "nome": "Kit Skincare Tiara Nuvem",
-    "preco": "Consulte no WhatsApp",
-    "descricao": "Kit com 6 peças para rotina de beleza, conforto e autocuidado.",
-    "imagem": "images/kit-skincare-tiara-nuvem.png"
-  },
-  {
-    "id": 2,
-    "nome": "Kit Presente Giovanna Baby",
-    "preco": "Consulte no WhatsApp",
-    "descricao": "Kit de presente com produtos delicados para cuidados diários.",
-    "imagem": "images/kit-presente-giovanna-baby.png"
-  },
-  {
-    "id": 3,
-    "nome": "Kit Presente Spa Mini",
-    "preco": "Consulte no WhatsApp",
-    "descricao": "Kit com itens de bem-estar, relaxamento e cuidado pessoal.",
-    "imagem": "images/kit-presente-spa-mini.png"
-  },
-  {
-    "id": 4,
-    "nome": "Linha Nelô Doce de Leite",
-    "preco": "Consulte no WhatsApp",
-    "descricao": "Linha corporal com hidratação, esfoliante e sabonete.",
-    "imagem": "images/linha-doce-de-leite.png"
-  },
-  {
-    "id": 5,
-    "nome": "Kit Rosa Mosqueta",
-    "preco": "Consulte no WhatsApp",
-    "descricao": "Kit de cuidados com foco em hidratação, luminosidade e maciez.",
-    "imagem": "images/kit-rosa-mosqueta.png"
-  },
-  {
-    "id": 6,
-    "nome": "Kit Feminino Luxo",
-    "preco": "Consulte no WhatsApp",
-    "descricao": "Kit sofisticado com acessórios para presentear com elegância.",
-    "imagem": "images/kit-feminino-luxo.png"
-  },
-  {
-    "id": 7,
-    "nome": "Kit Puro Leite",
-    "preco": "Consulte no WhatsApp",
-    "descricao": "Kit completo para cuidados diários com toque suave e hidratante.",
-    "imagem": "images/kit-puro-leite.png"
-  }
+  { "id": 1, "nome": "Kit Puro Encanto", "preco": "Consulte no WhatsApp", "descricao": "Kit presente com pijama e itens de autocuidado.", "imagem": "images/kit-puro-encanto.jpeg" },
+  { "id": 2, "nome": "Kit Beleza Versão", "preco": "Consulte no WhatsApp", "descricao": "Seleção de produtos de beleza para presentear.", "imagem": "images/kit-beleza-versao.jpeg" },
+  { "id": 3, "nome": "Kit Beleza", "preco": "Consulte no WhatsApp", "descricao": "Kit com opções de cuidados e acessórios.", "imagem": "images/kit-beleza.jpeg" },
+  { "id": 4, "nome": "Kit Presente Gatos", "preco": "Consulte no WhatsApp", "descricao": "Presente divertido com tema de gatos.", "imagem": "images/kit-presente-gatos.jpeg" },
+  { "id": 5, "nome": "Kit Doce de Leite", "preco": "Consulte no WhatsApp", "descricao": "Linha corporal com fragrância doce e aconchegante.", "imagem": "images/kit-doce-de-leite.jpeg" },
+  { "id": 6, "nome": "Kit Relógio e Pulseira", "preco": "Consulte no WhatsApp", "descricao": "Conjunto de relógio, pulseira e acessórios.", "imagem": "images/kit-relogio-pulseira.jpeg" },
+  { "id": 7, "nome": "Kit Bolsa com Textura", "preco": "Consulte no WhatsApp", "descricao": "Bolsa elegante acompanhada de acessórios.", "imagem": "images/kit-bolsa-textura.jpeg" },
+  { "id": 8, "nome": "Kit Nosso Amor", "preco": "Consulte no WhatsApp", "descricao": "Kit presente romântico para ocasiões especiais.", "imagem": "images/kit-nosso-amor.jpeg" },
+  { "id": 9, "nome": "Kit Mini Spa", "preco": "Consulte no WhatsApp", "descricao": "Itens para relaxamento e cuidados pessoais.", "imagem": "images/kit-mini-spa.jpeg" },
+  { "id": 10, "nome": "Kit Relógio Inteligente", "preco": "Consulte no WhatsApp", "descricao": "Relógio inteligente com acessórios para o dia a dia.", "imagem": "images/kit-relogio-inteligente.jpeg" },
+  { "id": 11, "nome": "Kit Presente Elegante", "preco": "Consulte no WhatsApp", "descricao": "Conjunto de acessórios para presentear.", "imagem": "images/kit-presente.jpeg" },
+  { "id": 12, "nome": "Kit Rosa Mosqueta", "preco": "Consulte no WhatsApp", "descricao": "Rotina de cuidados com rosa mosqueta.", "imagem": "images/kit-rosa-mosqueta.jpeg" },
+  { "id": 13, "nome": "Kit Beleza Hidratada", "preco": "Consulte no WhatsApp", "descricao": "Produtos para hidratação e cuidado corporal.", "imagem": "images/kit-beleza-hidratacao.jpeg" },
+  { "id": 14, "nome": "Kit Tecnologia que Cuida", "preco": "Consulte no WhatsApp", "descricao": "Acessórios tecnológicos para autocuidado.", "imagem": "images/kit-tecnologia-cuidados.jpeg" },
+  { "id": 15, "nome": "Kit Acessórios com Estilo", "preco": "Consulte no WhatsApp", "descricao": "Acessórios para complementar o visual.", "imagem": "images/kit-acessorios-estilo.jpeg" },
+  { "id": 16, "nome": "Kit Perfume Para o Seu Dia", "preco": "Consulte no WhatsApp", "descricao": "Perfume e cuidados para a rotina.", "imagem": "images/kit-perfume-dia-a-dia.jpeg" },
+  { "id": 17, "nome": "Kit Perfume Feminino", "preco": "Consulte no WhatsApp", "descricao": "Fragrância feminina para presentear.", "imagem": "images/kit-perfume-feminino.jpeg" },
+  { "id": 18, "nome": "Kit Pele Oleosa", "preco": "Consulte no WhatsApp", "descricao": "Cuidados faciais para pele oleosa.", "imagem": "images/kit-pele-oleosa.jpeg" },
+  { "id": 19, "nome": "Kit Pele Limpa", "preco": "Consulte no WhatsApp", "descricao": "Rotina de limpeza e cuidado facial.", "imagem": "images/kit-pele-limpa.jpeg" },
+  { "id": 20, "nome": "Kit Cherry Sweet", "preco": "Consulte no WhatsApp", "descricao": "Kit corporal com fragrância de cereja.", "imagem": "images/kit-cherry-sweet.jpeg" },
+  { "id": 21, "nome": "Kit Perfume Hello Kitty", "preco": "Consulte no WhatsApp", "descricao": "Perfume e acessórios da Hello Kitty.", "imagem": "images/kit-perfume-hello-kitty.jpeg" },
+  { "id": 22, "nome": "Kit Elegância", "preco": "Consulte no WhatsApp", "descricao": "Conjunto elegante de perfume e acessórios.", "imagem": "images/kit-elegancia.jpeg" },
+  { "id": 23, "nome": "Kit Clareador", "preco": "Consulte no WhatsApp", "descricao": "Cuidados faciais para uma pele iluminada.", "imagem": "images/kit-clareador.jpeg" },
+  { "id": 24, "nome": "Kit Giovanna Baby", "preco": "Consulte no WhatsApp", "descricao": "Kit delicado de cuidados e perfumação.", "imagem": "images/kit-giovanna-baby.jpeg" },
+  { "id": 25, "nome": "Kit Presente Spa Mini", "preco": "Consulte no WhatsApp", "descricao": "Kit presente com itens de spa e relaxamento.", "imagem": "images/kit-presente-spa-mini.jpeg" },
+  { "id": 26, "nome": "Kit Elegância com Bolsas", "preco": "Consulte no WhatsApp", "descricao": "Bolsas e acessórios para um visual sofisticado.", "imagem": "images/kit-elegancia-bolsas.jpeg" },
+  { "id": 27, "nome": "Kit Skincare Tiara Nuvem", "preco": "Consulte no WhatsApp", "descricao": "Kit de skincare com tiara e acessórios.", "imagem": "images/kit-skincare-tiara-nuvem.jpeg" },
+  { "id": 28, "nome": "Kit Presente Autocuidado", "preco": "Consulte no WhatsApp", "descricao": "Kit completo para uma rotina de autocuidado.", "imagem": "images/kit-presente-autocuidado.jpeg" },
+  { "id": 29, "nome": "Kits Especiais", "preco": "Consulte no WhatsApp", "descricao": "Opções especiais para diferentes ocasiões.", "imagem": "images/kits-especiais.jpeg" },
+  { "id": 30, "nome": "Kit Elegância com Bolsas 2", "preco": "Consulte no WhatsApp", "descricao": "Conjunto de bolsas e acessórios elegantes.", "imagem": "images/kit-elegancia-bolsas-2.jpeg" },
+  { "id": 31, "nome": "Kit Puro Leite", "preco": "Consulte no WhatsApp", "descricao": "Cuidados corporais com toque suave e hidratante.", "imagem": "images/kit-puro-leite.jpeg" },
+  { "id": 32, "nome": "Kit Acessórios", "preco": "Consulte no WhatsApp", "descricao": "Acessórios para acompanhar diferentes estilos.", "imagem": "images/kit-acessorios.jpeg" },
+  { "id": 33, "nome": "Kit Filha", "preco": "Consulte no WhatsApp", "descricao": "Presente especial para demonstrar carinho.", "imagem": "images/kit-filha.jpeg" },
+  { "id": 34, "nome": "Kit Rosa Mosqueta Completo", "preco": "Consulte no WhatsApp", "descricao": "Rotina completa de cuidados com rosa mosqueta.", "imagem": "images/kit-rosa-mosqueta-2.jpeg" },
+  { "id": 35, "nome": "Kit Elegância com Bolsa", "preco": "Consulte no WhatsApp", "descricao": "Bolsa e acessórios para um presente sofisticado.", "imagem": "images/kit-elegancia-bolsa.jpeg" },
+  { "id": 36, "nome": "Kit Cuidado Completo", "preco": "Consulte no WhatsApp", "descricao": "Seleção completa para cuidados e perfumação.", "imagem": "images/kit-cuidado-completo.jpeg" },
+  { "id": 37, "nome": "Kit Bem-Estar", "preco": "Consulte no WhatsApp", "descricao": "Produtos para relaxamento e bem-estar.", "imagem": "images/kit-bem-estar.jpeg" },
+  { "id": 38, "nome": "Kit Cuidado Corporal", "preco": "Consulte no WhatsApp", "descricao": "Kit de cuidados corporais e hidratação.", "imagem": "images/kit-cuidado-corporal.jpeg" },
+  { "id": 39, "nome": "Kit Cherry", "preco": "Consulte no WhatsApp", "descricao": "Kit corporal com fragrância marcante e adocicada.", "imagem": "images/kit-cherry.jpeg" },
+  { "id": 40, "nome": "Kit Presente Linda Garota", "preco": "Consulte no WhatsApp", "descricao": "Kit presente com perfume, body splash e bolsa, disponível em diversas fragrâncias.", "imagem": "images/kit-presente-linda-garota.png" }
 ]
